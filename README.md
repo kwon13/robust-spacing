@@ -2,7 +2,7 @@
 ### KLUE RoBERTa-large를 사용한 띄어쓰기 모델
 기존의 BERT-base 모델에서 학습량과 레이어의 수가 훨씬 더 많아진 RoBERTa를 사용한 띄어쓰기 보정 리포지토리입니다.  
 <a href="https://github.com/twigfarm/letr-sol-spacing">
-  <img src="https://img.shields.io/badge/기존의 리포지토리 바로가기-181717?style=flat-square&logo=GitHub&logoColor=white"/>
+  <img src="https://img.shields.io/badge/before repo-181717?style=flat-square&logo=GitHub&logoColor=white"/>
 </a>   
 
 ## 바뀌게 된 점
