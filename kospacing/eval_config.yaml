@@ -1,6 +1,6 @@
-bert_model: monologg/kobert
+bert_model: klue/roberta-large
 test_data_path: ./data/sample.txt
-ckpt_path: ./checkpoints/epoch=9_val_loss=0.105896.ckpt
-max_len: 128
+ckpt_path: ./checkpoints/epoch=0-step=3484.ckpt
+max_len: 512
 eval_batch_size: 128
 dropout_rate: 0.1
