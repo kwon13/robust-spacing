@@ -8,6 +8,7 @@
 * 코드 리팩터링
 <a href="https://kiwi-carol-258.notion.site/SOL-e13a590cf5f14ae4af32a2a518ef37d7" target="_blank">
 <img src="https://img.shields.io/badge/Notion-FFFFFF?style=flat-square&logo=Notion&logoColor=black"/></a>
+</a>
 ***
 
 ```
