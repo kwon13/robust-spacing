@@ -12,24 +12,27 @@ warnings.filterwarnings("ignore")
 from utils import load_slot_labels
 
 def prd_result(result):
-    test_path= OmegaConf.load("config/eval_config.yaml")
-    prd=result
-    text=[s for s in open(test_path.test_data_path, encoding='utf-8').readlines()]
     
-    tag_li=[list(filter(lambda x: i[x] == 'E', range(len(i))))[:-1] for i in prd]
+    # 띄어쓰기 결과를 알려주는 함수
+    
+    test_path= OmegaConf.load("config/eval_config.yaml")
+    test_text=[s for s in open(test_path.test_data_path, encoding='utf-8').readlines()]
+    
+    tag_list=[list(filter(lambda x: i[x] == 'E', range(len(i))))[:-1] for i in result]
 
     final=[]
 
-    for j in range(len(text)):
-        result_li=[]
-        for i in range(len(text[j])):
-            if i in tag_li[j]:
-                result_li.append(str(text[j][i]+' '))
+    for text_idx in range(len(test_text)):
+        result_list=[]
+        for char_idx in range(len(test_text[text_idx])):
+            if char_idx in tag_list[text_idx]:
+                result_list.append(str(test_text[text_idx][char_idx]+' '))
             else:
-                result_li.append(text[j][i])
-        final.append(''.join(result_li))
+                result_list.append(test_text[text_idx][char_idx])
+        final.append(''.join(result_list))
 
     return final
+
 class SpacingBertModel(pl.LightningModule):
     def __init__(
         self,
