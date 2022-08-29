@@ -12,9 +12,9 @@
 </a>   
 
 * 최대 max_len: 256 → 512
-* 사전학습 모델: KoBERT-base → KoRoBERTa-large
+* 사전학습 모델: KoBERT-base → KoRoBERTa-base + LSTM
 * 코드 리팩터링
-
+![스크린샷 2022-08-29 오후 6 06 48](https://user-images.githubusercontent.com/77109972/187166704-d4e61361-e299-4da4-94ef-0e8d999141e0.png)
 *** 
 
 ```
