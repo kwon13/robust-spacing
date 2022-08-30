@@ -1,4 +1,4 @@
-bert_model: klue/roberta-large
+bert_model: klue/roberta-base
 test_data_path: ./data/sample.txt
 ckpt_path: ./checkpoints/epoch=0-step=3484.ckpt
 max_len: 512
