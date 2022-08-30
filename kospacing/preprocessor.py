@@ -1,6 +1,6 @@
 import torch
 from typing import List, Tuple
-
+from omegaconf import OmegaConf
 from transformers import AutoTokenizer
 config = OmegaConf.load("config/train_config.yaml")
 
