@@ -2,7 +2,7 @@ import torch
 from typing import List, Tuple
 
 from transformers import AutoTokenizer
-
+ config = OmegaConf.load("config/train_config.yaml")
 
 class Preprocessor:
     def __init__(self, max_len: int):
