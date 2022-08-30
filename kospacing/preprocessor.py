@@ -2,11 +2,11 @@ import torch
 from typing import List, Tuple
 
 from transformers import AutoTokenizer
- config = OmegaConf.load("config/train_config.yaml")
+config = OmegaConf.load("config/train_config.yaml")
 
 class Preprocessor:
     def __init__(self, max_len: int):
-        self.tokenizer = AutoTokenizer.from_pretrained("klue/roberta-large")
+        self.tokenizer = AutoTokenizer.from_pretrained(config.bert_model)
         self.max_len = max_len
         self.pad_token_id = 0
 
