@@ -6,7 +6,7 @@
   <img src="https://img.shields.io/badge/Before Repo-181717?style=flat-square&logo=GitHub&logoColor=white"/>
 </a>   
 
-## 바뀌게 된 점
+## 변경사항
 <a href="https://kiwi-carol-258.notion.site/SOL-e13a590cf5f14ae4af32a2a518ef37d7">
   <img src="https://img.shields.io/badge/Open In Notion-FFFFFF?style=flat-square&logo=Notion&logoColor=black"/>
 </a>   
@@ -16,7 +16,7 @@
 * 코드 리팩터링  
 ### 결과
 ![스크린샷 2022-08-29 오후 6 06 48](https://user-images.githubusercontent.com/77109972/187166704-d4e61361-e299-4da4-94ef-0e8d999141e0.png)   
-val_loss: 0.384 -> 0.1439
+BERT_Val_loss: 0.384 -> RoBERTa_Val_loss: 0.1439
 *** 
 
 ```
