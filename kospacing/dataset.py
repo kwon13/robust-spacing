@@ -13,22 +13,25 @@ class CorpusDataset(Dataset):
         self._load_data(data_path)
 
     def _load_data(self, data_path: str):
-        
+        """data를 file에서 불러온다.
+
+        Args:
+            data_path: file 경로
+        """
         with open(data_path, mode="r", encoding="utf-8") as f:
             lines = f.readlines()
-            self.sentences = [line.split() for line in lines if line!='\n']
+            self.sentences = [line.split() for line in lines]
 
     def _get_tags(self, sentence: List[str]) -> List[str]:
         """문장에 대해 띄어쓰기 tagging을 한다.
-        character 단위로 분리하여 IOBES tagging을 한다.
-        
-        각 tags의 뜻
-        I : 안을 의미하는 token
-        O : pad를 의미하는 token
-        B : 시작을 의미하는 token
-        E : 끝을 의미하는 token
-        S : 단일 문자를 의미하는 token
-        
+        character 단위로 분리하여 BIES tagging을 한다.
+
+        Args:
+            sentence: 문장
+
+        Retrns:
+            문장의 각 토큰에 대해 tagging한 결과 리턴
+            ["B", "I", "E"]
         """
 
         all_tags = []
