@@ -1,5 +1,5 @@
 # Korean Spacing Model
-한국어 RoBERTa를 활용하여 만든 띄어쓰기 모델입니다.
+한국어 RoBERTa를 활용하여 만든 띄어쓰기 모델입니다.   
 [![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97-Models%20on%20Hub-yellow)](https://huggingface.co/fiveflow/roberta-base-spacing)
 ```python
 import torch
