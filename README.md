@@ -11,15 +11,11 @@
   <img src="https://img.shields.io/badge/Open In Notion-FFFFFF?style=flat-square&logo=Notion&logoColor=black"/>
 </a>   
 
-* 최대 max_len: 256 → 512
-* 사전학습 모델: KoBERT-base → KoRoBERTa-base + LSTM
-* 코드 리팩터링  
-### 결과
-![스크린샷 2022-08-29 오후 6 06 48](https://user-images.githubusercontent.com/77109972/187166704-d4e61361-e299-4da4-94ef-0e8d999141e0.png)   
+[![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97-Models%20on%20Hub-yellow)](https://huggingface.co/fiveflow/roberta-base-spacing)
 
-**BERT_Val_loss: 0.384 -> RoBERTa_Val_loss: 0.1439**
-*** 
-
+<a href="https://huggingface.co/fiveflow/roberta-base-spacing">
+  <img src="https://img.shields.io/badge/Open In Notion-FFFFFF?style=flat-square&logo=Notion&logoColor=black"/>
+</a>   
 ```
 @misc{park2021klue,
       title={KLUE: Korean Language Understanding Evaluation},
